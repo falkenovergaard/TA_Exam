@@ -1,1 +1,2 @@
-"# TA_Exam" 
+# Text Analytics exam project
+# mortenbnftw was here
