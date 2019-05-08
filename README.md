@@ -1,24 +1,24 @@
 # Text Analytics exam project
 
-## Git Commands
+### Git Commands
 
-### Init folder and download
-Navigate to desired folder:
+#### Init folder and download
+Navigate to desired folder and init in that folder:<br>
 Git init
 
-### See branches and checkout branch
+#### See branches and checkout branch
 git branch <br>
 git checkout "branch name"<br>
 
-### Pull master
+#### Pull branch
 git pull origin "branch name"<br>
 
-### Commit and push to a branch
+#### Commit and push to a branch
 git add . (Adds files to the commit)<br>
 git commit -m "First commit" (take the added files and commits with a message)<br>
 git push -u origin "branch name" (pushes to the remote)<br>
 
-### Merge master with branch
+#### Merge master with branch
 git checkout master<br>
 git pull origin master<br>
 git merge "branch name"<br>
