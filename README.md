@@ -29,5 +29,10 @@ git pull origin master<br>
 git merge "branch name"<br>
 git push origin master<br>
 
+#### Merge branch with master
+git checkout "branch" <br>
+git pull origin "branch" <br>
+git merge master<br>
+git push origin "branch" <br>
 
 
