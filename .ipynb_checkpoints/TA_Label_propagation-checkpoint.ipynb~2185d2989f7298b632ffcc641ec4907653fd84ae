@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 411,
    "metadata": {},
    "outputs": [
     {
@@ -38,19 +38,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 413,
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "999\n"
+      "974\n"
      ]
     }
    ],
    "source": [
-    "df = pd.read_excel(\"data/output/clean_labeled_data.xlsx\")\n",
+    "df = pd.read_excel(\"data/clean_labeled_data.xlsx\")\n",
     "print(len(df))"
    ]
   },
@@ -86,7 +86,7 @@
     "corpus = df.COMMENT.astype(str)\n",
     "y = df['LABEL'].values.astype(int)\n",
     " \n",
-    "vectorizer = CountVectorizer(input='content',binary=False,ngram_range=(1,1),smooth_idf = True)\n",
+    "vectorizer = CountVectorizer(input='content',binary=False,ngram_range=(1,1))\n",
     "transformer = TfidfTransformer()\n",
     "\n",
     "count = vectorizer.fit_transform(corpus).toarray()\n",
